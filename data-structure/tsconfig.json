@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES6",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": ["**/*.ts"]
+}
+
+//target은 컴파일된 JavaScript의 ECMAScript 버전을 지정합니다.
+
+//module은 모듈 형식을 지정합니다. (ES6을 사용하여 import/export를 허용)
+
+//rootDir은 소스 파일의 루트 디렉토리를 설정합니다.
+
+//outDir은 컴파일된 JavaScript 파일이 저장될 폴더를 설정합니다. (dist 폴더가 생성됩니다.)
+
+//esModuleInterop CommonJS 모듈과 ES6 모듈 간의 호환성을 높이기 위해 추가된 설정입니다
+// CommonJS => import * as fs from "fs"; 그러나 import fs from "fs"; 이러한 모듈 통합오류를 줄여줌
+
+//npm init -y로 package.json 생성후
+//typescript 설치후에 npx tsc 실행 그리고 dist 파일에 생성 된걸 실행
